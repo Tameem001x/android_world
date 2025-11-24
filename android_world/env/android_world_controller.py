@@ -162,7 +162,7 @@ class AndroidWorldController(base_wrapper.BaseWrapper):
   def __init__(
       self,
       env: env_interface.AndroidEnvInterface,
-      a11y_method: A11yMethod = A11yMethod.A11Y_FORWARDER_APP,
+      a11y_method: A11yMethod = A11yMethod.UIAUTOMATOR,
       install_a11y_forwarding_app: bool = True,
   ):
     self._original_env = env
